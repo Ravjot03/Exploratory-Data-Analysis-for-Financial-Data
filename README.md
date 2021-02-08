@@ -25,3 +25,34 @@ built on top of the Python programming language.
     - The dataset is available in the repository.
     - Dataset: `HistoricalQuotes.csv`
         
+  - Exploratory Data Analysis
+    - df.shape
+    - df.info()
+    - df.head()
+    - df.isna().sum()
+    - df.drop() -
+    - Changing the dtype of the `open`,`close`,`high` and `low` columns to `float`
+      - df.open = df.open.astype(float)
+    - Changing the dtype of the `volume` column to `int`
+      - df.volume = pd.to_numeric(df['volume']).astype(int)
+    - df.describe() - Summary statistics for all numeric columns (default)
+      - df.describe(include='int') : Summary statistics only for columns whose type is "int"
+    - Percentiles
+      - df.describe(percentiles=[.3, .5, .9]) : Summary statistics for all numeric columns with percentiles .3, .5 and .9
+  
+  - Filtering Data 
+    - Creating different dataframes using masks.
+  
+  - Filtering Data with dates
+    - Selecting date from date ranges
+    - Importing `datetime` package.
+    - Creating mask of historical dates.
+    
+  - Data Visualizations
+    - Line Plot showing Daily High Prices
+    - Histogram of High Prices
+    - Line plot of Volume over time
+    - Daily Volume Frequency distribution
+    - Filtering & Plotting data
+      - Filtering data of year 2016 from the dataset and then plotting it on a line plot over time
+      - `df.loc['2016'].plot(y='low'); plt.show()`
