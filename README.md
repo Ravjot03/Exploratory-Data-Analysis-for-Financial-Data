@@ -11,11 +11,11 @@ Also performed data filtering and built some visualizations from the dataset.
 ## Contents
 
   - Importing the required libraries
-    - pandas : pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool,
+    - `pandas` : pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool,
 built on top of the Python programming language.
-    - numpy : NumPy is a Python library that provides a simple yet powerful data structure: the n-dimensional array.
-    - matplotlib : Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python.
-    - seaborn : Seaborn is a Python data visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics.
+    - `numpy` : NumPy is a Python library that provides a simple yet powerful data structure: the n-dimensional array.
+    - `matplotlib` : Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python.
+    - `seaborn` : Seaborn is a Python data visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics.
     
   - Knowing the dataset
   
@@ -26,19 +26,19 @@ built on top of the Python programming language.
     - Dataset: `HistoricalQuotes.csv`
         
   - Exploratory Data Analysis
-    - df.shape
-    - df.info()
-    - df.head()
-    - df.isna().sum()
-    - df.drop() -
+    - `df.shape`
+    - `df.info()`
+    - `df.head()`
+    - `df.isna().sum()`
+    - `df.drop()` -
     - Changing the dtype of the `open`,`close`,`high` and `low` columns to `float`
-      - df.open = df.open.astype(float)
+      - `df.open = df.open.astype(float)`
     - Changing the dtype of the `volume` column to `int`
-      - df.volume = pd.to_numeric(df['volume']).astype(int)
+      - `df.volume = pd.to_numeric(df['volume']).astype(int)`
     - df.describe() - Summary statistics for all numeric columns (default)
-      - df.describe(include='int') : Summary statistics only for columns whose type is "int"
+      - `df.describe(include='int')` : Summary statistics only for columns whose type is "int"
     - Percentiles
-      - df.describe(percentiles=[.3, .5, .9]) : Summary statistics for all numeric columns with percentiles .3, .5 and .9
+      - `df.describe(percentiles=[.3, .5, .9])` : Summary statistics for all numeric columns with percentiles .3, .5 and .9
   
   - Filtering Data 
     - Creating different dataframes using masks.
