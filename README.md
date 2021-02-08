@@ -22,6 +22,7 @@ built on top of the Python programming language.
   Analyzing historical price data is an important way to try to make future predictions. We will be using a dataset of stock data for the company XYZ. This data includes opening, closing, high, low prices and stocks traded per day.
     
     - Importing and Loading the dataset
-      - The data is also available in the repository.
-      - Dataset : `HistoricalQuotes.csv`
+    
+        - The data is also available in the repository.
+        - Dataset : `HistoricalQuotes.csv`
       
