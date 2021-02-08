@@ -30,7 +30,8 @@ built on top of the Python programming language.
     - `df.info()`
     - `df.head()`
     - `df.isna().sum()`
-    - `df.drop()` -
+    - `df.drop()`
+      - `df.drop(df.index[0], inplace=True)` : Dropping 1st row of the dataset
     - Changing the dtype of the `open`,`close`,`high` and `low` columns to `float`
       - `df.open = df.open.astype(float)`
     - Changing the dtype of the `volume` column to `int`
@@ -42,11 +43,16 @@ built on top of the Python programming language.
   
   - Filtering Data 
     - Creating different dataframes using masks.
+      - For example: Create a mask for all of the rows whose daily high is greater than $600.
+      - `high_mask = df.high > 600; df.loc[high_mask]`
   
   - Filtering Data with dates
     - Selecting date from date ranges
+      - `start_date = datetime(2019,8,2); end_date =  datetime(2019,7,29)`
     - Importing `datetime` package.
+      - `from datetime import datetime`
     - Creating mask of historical dates.
+      - `mask = (end_date <= df.index) & (df.index <= start_date); df2 = df[mask]; df2`
     
   - Data Visualizations
     - Line Plot showing Daily High Prices
