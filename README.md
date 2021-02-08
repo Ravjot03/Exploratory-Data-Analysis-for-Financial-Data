@@ -18,10 +18,10 @@ built on top of the Python programming language.
     - seaborn : Seaborn is a Python data visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics.
     
   - Knowing the dataset
+  
   Analyzing historical price data is an important way to try to make future predictions. We will be using a dataset of stock data for the company XYZ. This data includes opening, closing, high, low prices and stocks traded per day.
   
-    - Importing and Loading the dataset
-    
-      - The dataset is available in the repository.
-      - Dataset: `HistoricalQuotes.csv`
+  - Importing and Loading the dataset
+    - The dataset is available in the repository.
+    - Dataset: `HistoricalQuotes.csv`
         
