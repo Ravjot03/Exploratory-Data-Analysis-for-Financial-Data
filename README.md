@@ -1,30 +1,31 @@
 # Exploratory-Data-Analysis-for-Financial-Data
-
-## Short Description
+---
+## Description
 In this jupyter notebook, I have performed Exploratory Data Analysis on Financial data.
 
 I have used stocks data of a company (named any XYZ) which contains the opening, closing, high and low stock prices per day.
 
 Also performed data filtering and built some visualizations from the dataset.
 
+---
 ## Contents
 
-  - Importing the required libraries
+  - **Importing the required libraries**
     - `pandas` : pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool,
 built on top of the Python programming language.
     - `numpy` : NumPy is a Python library that provides a simple yet powerful data structure: the n-dimensional array.
     - `matplotlib` : Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python.
     - `seaborn` : Seaborn is a Python data visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics.
     
-  - Knowing the dataset
+  - **Knowing the dataset**
   
   Analyzing historical price data is an important way to try to make future predictions. We will be using a dataset of stock data for the company XYZ. This data includes opening, closing, high, low prices and stocks traded per day.
   
-  - Importing and Loading the dataset
-    - The dataset is available in the repository.
+  - **Importing and Loading the dataset**
+    - The dataset is available in the repository.[(Here)](https://github.com/Ravjot03/Exploratory-Data-Analysis-for-Financial-Data/blob/main/Dataset/HistoricalQuotes.csv)
     - Dataset: `HistoricalQuotes.csv`
         
-  - Exploratory Data Analysis
+  - **Exploratory Data Analysis**
     - `df.shape`
     - `df.info()`
     - `df.head()`
@@ -40,12 +41,12 @@ built on top of the Python programming language.
     - Percentiles
       - `df.describe(percentiles=[.3, .5, .9])` : Summary statistics for all numeric columns with percentiles .3, .5 and .9
   
-  - Filtering Data 
+  - **Filtering Data** 
     - Creating different dataframes using masks.
       - For example: Create a mask for all of the rows whose daily high is greater than $600.
       - `high_mask = df.high > 600; df.loc[high_mask]`
   
-  - Filtering Data with dates
+  - **Filtering Data with dates**
     - Selecting date from date ranges
       - `start_date = datetime(2019,8,2); end_date =  datetime(2019,7,29)`
     - Importing `datetime` package.
@@ -53,7 +54,7 @@ built on top of the Python programming language.
     - Creating mask of historical dates.
       - `mask = (end_date <= df.index) & (df.index <= start_date); df2 = df[mask]; df2`
     
-  - Data Visualizations
+  - **Data Visualizations**
     - Line Plot showing Daily High Prices
     - Histogram of High Prices
     - Line plot of Volume over time
